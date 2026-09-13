@@ -12,13 +12,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 import joblib
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.inspection import permutation_importance
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import (accuracy_score, classification_report,
-                             confusion_matrix, f1_score)
+from sklearn.metrics import (classification_report,
+                             confusion_matrix)
 from sklearn.model_selection import StratifiedKFold, cross_val_score
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler

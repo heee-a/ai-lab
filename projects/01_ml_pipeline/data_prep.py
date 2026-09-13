@@ -7,7 +7,6 @@
 - 泄漏对照实验：加入人均GDP，展示指标虚高，验证防泄漏设计的必要性
 """
 
-import sys
 from pathlib import Path
 
 import pandas as pd
