@@ -1,0 +1,10 @@
+                     precision    recall  f1-score   support
+
+        High income      1.000     1.000     1.000        71
+         Low income      0.950     0.950     0.950        20
+Lower middle income      0.977     0.913     0.944        46
+Upper middle income      0.931     0.982     0.956        55
+
+           accuracy                          0.969       192
+          macro avg      0.964     0.961     0.962       192
+       weighted avg      0.969     0.969     0.969       192

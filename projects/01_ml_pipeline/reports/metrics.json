@@ -1,0 +1,42 @@
+{
+  "n_countries": 192,
+  "features": [
+    "life_exp",
+    "co2_pc",
+    "urban"
+  ],
+  "label": "income_level",
+  "class_distribution": {
+    "High income": 71,
+    "Upper middle income": 55,
+    "Lower middle income": 46,
+    "Low income": 20
+  },
+  "logreg_cv": {
+    "cv_accuracy_mean": 0.6611,
+    "cv_accuracy_std": 0.1139,
+    "cv_f1_macro_mean": 0.5911
+  },
+  "rf_cv": {
+    "cv_accuracy_mean": 0.6827,
+    "cv_accuracy_std": 0.0503,
+    "cv_f1_macro_mean": 0.6999
+  },
+  "leakage_experiment": {
+    "防泄漏特征(无GDP)": {
+      "cv_accuracy_mean": 0.6611,
+      "cv_accuracy_std": 0.1139,
+      "cv_f1_macro_mean": 0.5911
+    },
+    "泄漏对照(含人均GDP)": {
+      "cv_accuracy_mean": 0.7657,
+      "cv_accuracy_std": 0.0669,
+      "cv_f1_macro_mean": 0.6802
+    }
+  },
+  "permutation_importance": {
+    "life_exp": 0.3846,
+    "co2_pc": 0.331,
+    "urban": 0.1557
+  }
+}
