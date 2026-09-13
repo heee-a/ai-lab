@@ -26,6 +26,13 @@ BM25 + 检索评测）、交互式仪表盘（自包含 HTML）。数据全部�
 - 纯检索模式完全离线；配置 LLM 后生成带引用标注的回答。
 → [README](projects/02_rag_kb/README.md)
 
+### 🧠 [04 digit_nn 深度学习对照实验](projects/04_digit_nn/)
+**任务**：PyTorch MLP 分类手写数字，对照 ml-bench 的 SVM-RBF（98.0%）。
+- 诚实负结果：**MLP 94.4% < SVM 98.25%**——1797 个样本喂不饱深度网络；
+- 训练曲线/混淆矩阵/固定种子全可复现；
+- 改进方向（增广/卷积/预训练）如实列出而未夸口。
+→ [README](projects/04_digit_nn/README.md)
+
 ### 📊 [03 dashboard 交互式仪表盘](projects/03_dashboard/)
 **任务**：把作品集数据变成"看起来高级"的可视化。
 - Gapminder 风格动画散点：2000-2023 收入 × 寿命 × 碳排放，点击播放 24 年演变；

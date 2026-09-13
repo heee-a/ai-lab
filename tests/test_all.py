@@ -77,3 +77,11 @@ def test_dashboard_html_exists_and_contains_plotly():
     html = html_path.read_text(encoding="utf-8")
     assert "Plotly.newPlot" in html
     assert "heatmap" in html.lower()
+
+
+# ---------------- 04 digit nn ----------------
+def test_digit_nn_metrics():
+    m = pd.read_json(REPO / "projects/04_digit_nn/reports/metrics.json",
+                     typ="series")
+    assert 0.93 <= m["holdout_accuracy"] < 0.98   # 诚实区间：低于 SVM 98.25%
+    assert m["svm_reference_cv"] == 0.9825

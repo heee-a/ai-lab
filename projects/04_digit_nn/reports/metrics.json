@@ -1,0 +1,6 @@
+{
+  "holdout_accuracy": 0.9444,
+  "svm_reference_cv": 0.9825,
+  "epochs": 80,
+  "final_loss": 0.1899
+}
